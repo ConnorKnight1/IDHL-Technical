@@ -1,0 +1,53 @@
+// Product Card Section Start //
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 305 / 267;
+}
+
+.product__card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 3.5rem 2.25rem;
+  border-radius: 0.35rem;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+  margin-top: 0.75rem;
+}
+
+.product-price {
+  font-family: var(--font-family-roboto);
+  font-weight: bolder;
+  font-size: 1rem;
+  letter-spacing: 0.085rem;
+  color: var(--primary-color);
+}
+
+.product-button {
+  display: inline-block;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 2.5rem;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.product-button span {
+  font-family: var(--font-family-roboto);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+// Product Card Second End //

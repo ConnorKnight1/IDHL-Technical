@@ -1,0 +1,23 @@
+// Heading Styling Start //
+
+.header__navbar {
+  position: sticky;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.25rem 1.5rem;
+  background-color: white;
+}
+
+.logo__image {
+  height: 2rem;
+  width: auto;
+  display: block;
+}
+
+.navbar__cart-icon {
+  height: 2rem;
+  width: auto;
+}
+
+// Heading Styling End //

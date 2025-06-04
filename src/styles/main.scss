@@ -1,5 +1,11 @@
 @use 'variables';
+@use 'header';
+@use 'content-copy';
+@use 'product-card';
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body {
   font-family: var(--font-family-sans);
   background-color: #EBF6F8;
@@ -13,11 +19,9 @@ body {
   box-sizing: border-box;
 }
 
-// General Styling //
-
 h1,
 h2,
-h3 ,
+h3,
 h4,
 h5,
 h6 {
@@ -53,102 +57,3 @@ h3 {
     background-color: #EBF6F8;
   }
 }
-
-// General Styling End //
-
-
-// Heading Styling Start //
-
-.header__navbar {
-  position: sticky;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  padding: 2.25rem 1.5rem;
-  background-color: white;
-}
-
-.logo__image {
-  height: 2rem;
-  width: auto;
-  display: block;
-}
-
-.navbar__cart-icon {
-  height: 2rem;
-  width: auto;
-}
-
-// Heading Styling End //
-
-// Content Copy Start
-
-.content__copy {
-  text-align: center;
-}
-
-.content__copy-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.content {
-  opacity: 50%;
-}
-
-// Content Copy End //
-
-// Product Card Section Start //
-
-.product-image {
-  width: 100%;
-  aspect-ratio: 305 / 267
-}
-
-.product__card {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 3.5rem 2.25rem;
-  border-radius: 0.35rem;
-  background: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.product-title {
-  margin-top: 0.75rem
-}
-
-.product-price {
-  font-family: var(--font-family-roboto);
-  font-weight: bolder;
-  font-size: 1rem;
-  letter-spacing: 0.085rem;
-  color: var(--primary-color);
-}
-
-.product-button {
-  display: inline-block;
-  width: fit-content;
-  margin: 0 auto;
-  background-color: var(--primary-color);
-  border: none;
-  border-radius: 2.5rem;
-  padding: 1rem 2.5rem;
-  cursor: pointer;
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.product-button span {
-  font-family: var(--font-family-roboto);
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  color: white
-}
-
-// Product Card Second End //
