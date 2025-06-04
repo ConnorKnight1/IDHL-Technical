@@ -2,7 +2,7 @@
 
 # Webpack
 
-## Project uses Webpack to handle multiple front-end workflows. 
+## Project uses Webpack to handle multiple front-end workflows.
 
 # 1. Module Bundling - compiles JS files into single bundle.js
 # 2. SASS Precompilation - Converts scss files to CSS using sass loader.
@@ -13,13 +13,12 @@
 ### NPM Scripts
 
 # npm run start
-# 1. Starts Development server using webpack-dev-server 
-# 2. Watches for file changes 
+# 1. Starts Development server using webpack-dev-server
+# 2. Watches for file changes
 # 3. Rebuilds / Reloads browser automatically if there's changes to files.
 
 # npm run build
 # 1. Runs webpack in either 'dev' or 'prod'
-# 2. Read config from webpack.config.js 
-# 3. Complies all source files 
+# 2. Read config from webpack.config.js
+# 3. Complies all source files
 # 4. Outputs final files within dist/ directory 
-

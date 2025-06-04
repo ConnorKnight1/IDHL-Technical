@@ -36,9 +36,11 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: './dist',
+    static: './src',
     open: true,
+    port: 3000,
     hot: true,
+    liveReload: true,
   },
   mode: 'development',
 };

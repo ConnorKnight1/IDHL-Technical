@@ -1,8 +1,67 @@
+@use 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
+
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family-sans);
   background-color: #EBF6F8;
   margin: 0;
   padding: 0;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// General Styling //
+
+.fluid-container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+// General Styling End //
+
+
+// Heading Styling Start //
+
+.header__navbar {
+  position: sticky;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.25rem 1.5rem;
+  background-color: red;
+}
+
+.logo__image {
+  height: 2rem;
+  width: auto;
+  display: block;
+}
+
+.navbar__cart-icon {
+  height: 2rem;
+  width: auto;
+}
+
+// Heading Styling End //
+
+// Content Copy Start
+
+.content__copy {
+  text-align: center;
+}
+
+.content__copy-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 2rem;
+}
+
+
+// Content Copy End //
