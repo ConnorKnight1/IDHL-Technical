@@ -1,0 +1,65 @@
+// cart.scss
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+  z-index: 999;
+}
+
+.cart-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 350px;
+  max-width: 90%;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+  transition: right 0.8s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.cart-panel.open {
+  right: 0;
+}
+
+.cart-panel h2 {
+  margin: 0 0 1.5rem 0;
+  font-family: var(--font-family-roboto);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.cart-panel p {
+  font-family: var(--font-family-sans);
+  font-size: 1rem;
+  color: #333;
+}
+
+#closeCart {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
