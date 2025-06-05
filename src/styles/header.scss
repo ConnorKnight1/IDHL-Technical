@@ -9,6 +9,14 @@
   padding: 2.25rem 1.5rem;
   z-index: 50;
 
+  @media (max-width: 767px) {
+    background-color: white;
+  }
+
+  @media (min-width: 768px) {
+    padding: 2rem 2rem;
+  }
+
   @media (min-width: 1024px) {
     padding: 3rem 2.5rem;
   }
@@ -20,7 +28,7 @@
   width: auto;
   display: block;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     height: 3rem;
   }
 
@@ -30,7 +38,7 @@
   height: 2rem;
   width: auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     height: 3rem;
   }
 
