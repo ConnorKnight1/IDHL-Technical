@@ -99,19 +99,44 @@
 
     </main>
 
-    <!-- Slide-Out Cart -->
-    <aside class="cart-overlay" id="cartOverlay">
-      <div class="cart-panel" id="cartPanel">
+    <!-- Slide-Out Cart Partial Start -->
+    <aside class="cart-overlay active" id="cartOverlay">
+      <div class="cart-panel open" id="cartPanel">
         <div class="cart-panel__header">
-          <h2>Your Basket</h2>
-          <button id="closeCart" aria-label="Close Cart">&times;</button>
+          <h4>Your Basket</h4>
+          <button id="closeCart" aria-label="Close Cart">
+            <img src="../assets/svg/close.svg" alt="" class="cart-close-icon">
+          </button>
         </div>
-        <div class="cart-panel__content">
-          <p>1x Natures Menu Dog Food Can Chicken – £22.81</p>
+        <div class="cart-panel__container">
+
+          <div class="cart-panel__item">
+
+            <div class="cart-panel__image-container">
+              <img src="../assets/png/placeholder-image.png" alt="Product Image">
+            </div>
+
+            <div class="cart-panel__content">
+                <span
+                  class="cart-item-title"
+                >
+                  Natures Menu Dog Food Can Chicken
+                </span>
+                <span class="product-price">
+                  £22.81
+                </span>
+
+                <button class="cart-item-remove">
+                  <span> Remove </span>
+                </button>
+            </div>
+          </div>
+
           <!-- Pre-populated content -->
         </div>
       </div>
     </aside>
+    <!-- Slide-Out Cart Partial Start -->
 
   </body>
 
