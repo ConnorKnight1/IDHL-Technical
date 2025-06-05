@@ -36,10 +36,12 @@
 
     <main
         class="section__container"
+        aria-label="Main Content"
     >
       <!-- Content Copy Column Partial Start -->
       <section
         class="content__copy block-spacing fluid-container"
+        aria-label="Product Listing"
       >
         <div class="content__copy-container">
            <h1>
@@ -81,7 +83,7 @@
             </span>
 
             <!-- Button Partial Start -->
-            <button class="product-button">
+            <button class="product-button" aria-label="Add Natures Menu Dog Food Can Chicken to cart">
               <span> Add to bag </span>
             </button>
             <!-- Button Partial End -->
@@ -96,12 +98,12 @@
     </main>
 
     <!-- Slide-Out Cart Partial Start -->
-    <aside class="cart-overlay" id="cartOverlay" data-module-cart>
+    <aside class="cart-overlay" id="cartOverlay" data-module-cart aria-label="Shopping Cart Sidebar">
       <div class="cart-panel" id="cartPanel">
         <div class="cart-panel__header">
           <h4>Your Basket</h4>
           <button id="closeCart" aria-label="Close Cart">
-            <img src="../assets/svg/close.svg" alt="" class="cart-close-icon">
+            <img src="../assets/svg/close.svg" alt="Close Cart Icon" class="cart-close-icon">
           </button>
         </div>
         <div class="cart-panel__container">
@@ -122,7 +124,7 @@
                   £22.81
                 </span>
 
-                <button class="cart-item-remove">
+                <button class="cart-item-remove" aria-label="Remove Natures Menu Dog Food Can Chicken from cart.">
                   <span> Remove </span>
                 </button>
             </div>
@@ -134,11 +136,11 @@
               Subtotal: <span> £22.81</span>
             </span>
 
-            <button class="cart-checkout__button">
+            <button class="cart-checkout__button" aria-label="Proceed to checkout with 1 item totaling £22.81">
                 <span> Proceed to checkout</span>
             </button>
 
-            <button class="cart-checkout__continue">
+            <button class="cart-checkout__continue" aria-label="Continue shopping and close cart.">
               Continue shopping
             </button>
 
