@@ -33,6 +33,10 @@
   padding: 2rem 2rem 0rem 2rem;
   overflow-y: auto;
 
+  @media (min-width: 768px) {
+    width: 400px;
+  }
+
   @media (min-width: 1024px) {
     width: 600px;
   }

@@ -17,7 +17,7 @@
     padding: 2rem 2rem;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1600px) {
     padding: 3rem 2.5rem;
   }
 
@@ -29,6 +29,10 @@
   display: block;
 
   @media (min-width: 1024px) {
+    height: 2.5rem;
+  }
+
+  @media (min-width: 1600px) {
     height: 3rem;
   }
 
@@ -39,6 +43,10 @@
   width: auto;
 
   @media (min-width: 1024px) {
+    height: 2.5rem;
+  }
+
+  @media (min-width: 1480px) {
     height: 3rem;
   }
 
