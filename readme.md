@@ -44,7 +44,10 @@ This project uses **Webpack** to manage multiple front-end workflows.
 
 For an explanation of how the cart script works, refer to the following files:
 
-- `index.html`
-- `LoadModules.js`
 - `cart.js`
+- `LoadModules.js`
+- `index.html`
 - `cart.scss`
+
+- Please note the 1 second loading animation is triggered through the `Add to bag` button, this is
+- explained within the `cart.js`.
