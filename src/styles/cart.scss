@@ -137,6 +137,11 @@
   border-bottom: 2px solid black;
   width: fit-content;
   margin-top: 15px;
+  transition: opacity 0.3s ease;
+}
+
+.cart-item-remove:hover {
+  opacity: 60%;
 }
 
 .cart-item-title {
@@ -181,6 +186,11 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.cart-checkout__button:hover {
+  background-color: var(--hover-primary-color);
 }
 
 .cart-checkout__button span {

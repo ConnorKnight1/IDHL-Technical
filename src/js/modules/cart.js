@@ -1,7 +1,6 @@
 const selector = "[data-module-cart]";
 
 const start = (element) => {
-
     const addToBagButton = document.querySelector('.product-button');
     const navCartButton = document.querySelector('.navbar__cart-button');
     const cartOverlay = document.getElementById('cartOverlay');
@@ -17,18 +16,23 @@ const start = (element) => {
             setTimeout(() => {
                 cartOverlay.classList.add('active');
                 cartPanel.classList.add('open');
+                document.body.style.overflow = 'hidden';  // lock scroll
                 addToBagButton.disabled = false;
                 addToBagButton.innerHTML = '<span>Add to bag</span>';
             }, 1000);
         } else {
             cartOverlay.classList.add('active');
             cartPanel.classList.add('open');
+            document.body.style.overflow = 'hidden';  // lock scroll
         }
     }
 
     function closeCart() {
         cartPanel.classList.remove('open');
-        setTimeout(() => cartOverlay.classList.remove('active'), 300);
+        setTimeout(() => {
+            cartOverlay.classList.remove('active');
+            document.body.style.overflow = '';  // restore scroll
+        }, 300);
     }
 
     addToBagButton.addEventListener('click', () => openCart(true));
@@ -41,7 +45,6 @@ const start = (element) => {
             closeCart();
         }
     });
-
 };
 
 export default {

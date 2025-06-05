@@ -1,12 +1,14 @@
 // scss/_variables.scss
 
 // SCSS variables
-$primary-color: #FF5C00;
+$primary-color: #ff5c00;
 $secondary-color: #2ecc71;
 $background-color: #EBF6F8;
 $border-color: #EBEBEB;
 $text-color-black: #000000;
 $text-color-white: #FFFFFF;
+
+$hover-primary-color: #E65200;
 
 $font-family-sans: 'Open Sans', sans-serif;
 $font-family-roboto: 'Roboto', sans-serif;
@@ -22,6 +24,8 @@ $font-weight-bold: 700;
   --border-color: #{$border-color};
   --text-color-black: #{$text-color-black};
   --text-color-white: #{$text-color-white};
+
+  --hover-primary-color: #{$hover-primary-color};
 
   --font-family-sans: #{$font-family-sans};
   --font-family-roboto: #{$font-family-roboto};

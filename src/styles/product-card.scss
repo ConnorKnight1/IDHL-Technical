@@ -56,6 +56,11 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.product-button:hover {
+  background-color: var(--hover-primary-color);
 }
 
 .product-button span {
