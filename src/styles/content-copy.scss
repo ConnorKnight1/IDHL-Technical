@@ -2,16 +2,51 @@
 
 .content__copy {
   text-align: center;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 .content__copy-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: 768px) {
+    width: 500px;
+    gap: 40px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 625px;
+    gap: 40px;
+  }
+
 }
 
 .content {
   opacity: 50%;
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 1.375rem;
+  }
+
 }
 
 // Content Copy End //

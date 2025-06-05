@@ -13,10 +13,22 @@
   border-radius: 0.35rem;
   background: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  @media (min-width: 1024px) {
+    width: 425px;
+    padding: 3.5rem 2.75rem;
+    gap: 25px;
+  }
+
 }
 
 .product-title {
   margin-top: 0.75rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
 }
 
 .product-price {
@@ -25,6 +37,11 @@
   font-size: 1rem;
   letter-spacing: 0.085rem;
   color: var(--primary-color);
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+
 }
 
 .product-button {
@@ -47,6 +64,10 @@
   font-weight: 500;
   letter-spacing: 0.1rem;
   color: white;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 // Product Card Second End //
